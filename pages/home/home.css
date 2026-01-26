@@ -1,0 +1,113 @@
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.inicio-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.inicio-container h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+
+.inicio-container .intro {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.inicio-container .intro em {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+    position: relative;
+}
+
+.inicio-container .intro em::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+}
+
+/* Tarjeta de Puntos Clave */
+.puntos-clave {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 3rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.puntos-clave h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.puntos-clave ul {
+    list-style: none;
+    padding: 0;
+}
+
+.puntos-clave li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--text-color);
+}
+
+/* Caja CTA y Enlaces */
+.box {
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--bg-color) 100%);
+    border: 1px solid var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.box p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.enlace-interno {
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.enlace-interno:hover {
+    color: var(--text-color);
+}
+
+/* Responsive específico de Home */
+@media (max-width: 600px) {
+    .inicio-container h2 { font-size: 2rem; }
+    .inicio-container .intro { font-size: 1rem; }
+    .puntos-clave { padding: 1.5rem; }
+}

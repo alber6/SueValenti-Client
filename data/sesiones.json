@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Iniciación Onírica: El Despertar",
+    "descripcion": "Aprende a navegar tus sueños lúcidos y descifra los mensajes ocultos de tu subconsciente para tomar el control.",
+    "precio": 95
+  },
+  {
+    "id": 2,
+    "nombre": "Regresión Akáshica Profunda",
+    "descripcion": "Un viaje guiado a través de tus memorias ancestrales para sanar bloqueos del presente accediendo a la biblioteca del alma.",
+    "precio": 150
+  },
+  {
+    "id": 3,
+    "nombre": "Protocolo Valenti: Supra Consciencia",
+    "descripcion": "La experiencia definitiva. Conexión directa con tu Yo Superior para una reprogramación mental completa y liberación de patrones.",
+    "precio": 250
+  },
+  {
+    "id": 4,
+    "nombre": "Armonización Bio-Cuántica",
+    "descripcion": "Sesión de calibración energética que restablece tu frecuencia vibratoria y limpia tu campo áurico de densidades externas.",
+    "precio": 120
+  },
+  {
+    "id": 5,
+    "nombre": "El Laberinto de Espejos",
+    "descripcion": "Una experiencia interactiva intensa para enfrentar, integrar y disolver tu sombra psicológica en un entorno seguro.",
+    "precio": 180
+  },
+  {
+    "id": 6,
+    "nombre": "Arquitectura de la Realidad",
+    "descripcion": "Taller avanzado de manifestación consciente donde aprenderás a colapsar líneas de tiempo y materializar tus propósitos.",
+    "precio": 210
+  }
+]

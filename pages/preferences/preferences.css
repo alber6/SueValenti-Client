@@ -1,0 +1,56 @@
+
+#apariencia {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 450px;
+    margin: 4rem auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+#apariencia h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+#apariencia p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 2.5rem;
+}
+
+/* El Botón del Sol/Luna */
+#themeBtn {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#themeBtn:hover {
+    transform: scale(1.15) rotate(20deg);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+@media (max-width: 600px) {
+    #apariencia {
+        margin: 2rem 1rem;
+        padding: 2rem 1rem;
+    }
+}

@@ -1,0 +1,33 @@
+
+.list {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.cart-summary {
+    text-align: right;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px dashed var(--accent-color);
+}
+
+/* Responsive específico de Carrito */
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .cart-item button {
+        align-self: flex-end;
+    }
+}

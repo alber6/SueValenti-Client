@@ -1,0 +1,142 @@
+/* 1. IMPORTAMOS LOS MÓDULOS (El orden importa) */
+@import url('/pages/home/home.css');
+@import url('/pages/sessions/Sessions.css');
+@import url('/pages/carrito/carrito.css');
+@import url('/pages/preferences/preferences.css');
+
+/* 1. VARIABLES Y CONFIGURACIÓN BASE */
+:root {
+    /* Paleta de colores (Modo Oscuro por defecto) */
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --text-color: #eaeaea;
+    --accent-color: #0f3460;
+    --primary-color: #e94560;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition: all 0.3s ease;
+}
+
+/* MODO CLARO */
+body.light {
+    --bg-color: #f4f4f9;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --accent-color: #e0e0e0;
+    --primary-color: #6c63ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. HEADER Y NAVEGACIÓN */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.botones {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* 3. BOTONES MODERNOS (Globales) */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-danger {
+    background-color: #ff4757;
+    color: white;
+}
+
+/* 4. CONTENEDOR PRINCIPAL */
+#container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+    width: 100%;
+}
+
+/* ESTILOS GENÉRICOS DE TARJETAS (Usados en varias secciones) */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+/* 5. FOOTER */
+footer {
+    background-color: var(--card-bg);
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+/* 6. MEDIA QUERIES GLOBALES */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.5rem; }
+    .botones { gap: 5px; }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+        flex: 1 1 40%;
+    }
+}
